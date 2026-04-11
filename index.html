@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo Card</title>
+
+  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+ <body>
+
+<article data-testid="test-todo-card">
+  
+  <div class="header">
+    <h2 data-testid="test-todo-title">Develop your Porfolio😊</h2>
+    <!-- <span class="badge high" data-testid="test-todo-priority" aria-label="High priority">
+      High
+    </span> -->
+  </div>
+<span class="badge high" data-testid="test-todo-priority" aria-label="High priority">
+      High
+    </span>
+  <p data-testid="test-todo-description">
+    Create a clean and user friendly Portfolio for your Front-end Development.
+  </p>
+
+  <div class="meta">
+    <time data-testid="test-todo-due-date" datetime="2026-03-01T18:00:00Z">
+       <i class="fa-solid fa-calendar"></i> Due Mar 1, 2026
+    </time>
+
+    <time data-testid="test-todo-time-remaining" aria-live="polite"></time>
+
+    <span class="status" data-testid="test-todo-status">
+      <i class="fa-solid fa-clock"></i>
+      Pending
+    </span>
+  </div>
+
+  <div class="tags" role="list" data-testid="test-todo-tags">
+    <span class="tag" role="listitem" data-testid="test-todo-tag-work">work</span>
+    <span class="tag" role="listitem" data-testid="test-todo-tag-urgent">urgent</span>
+    <span class="tag" role="listitem">design</span>
+  </div>
+
+  <div class="actions">
+    <label>
+      <input 
+        type="checkbox"
+        data-testid="test-todo-complete-toggle"
+        aria-label="Mark task as complete"
+         
+      />
+     Complete 
+    </label>
+
+    <div>
+      <button class="edit" data-testid="test-todo-edit-button" aria-label="Edit task">
+         <i class="fa-solid fa-pen"></i>
+        Edit
+      </button>
+      <button class="delete" data-testid="test-todo-delete-button" aria-label="Delete task">
+        <i class="fa-solid fa-trash"></i>
+        Delete
+      </button>
+    </div>
+  </div>
+<i class="fa-light fa-trash-can"></i>
+</article>
+
+<script src="script.js"></script>
+
+</body>
+</html>
