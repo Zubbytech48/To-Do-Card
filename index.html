@@ -14,34 +14,36 @@
   
   <div class="header">
     <h2 data-testid="test-todo-title">Develop your Porfolio😊</h2>
-    <!-- <span class="badge high" data-testid="test-todo-priority" aria-label="High priority">
-      High
-    </span> -->
-  </div>
-<span class="badge high" data-testid="test-todo-priority" aria-label="High priority">
+    <span class="badge high" data-testid="test-todo-priority" aria-label="High priority">
       High
     </span>
+  </div>
+
   <p data-testid="test-todo-description">
     Create a clean and user friendly Portfolio for your Front-end Development.
   </p>
 
   <div class="meta">
-    <time data-testid="test-todo-due-date" datetime="2026-03-01T18:00:00Z">
-       <i class="fa-solid fa-calendar"></i> Due Mar 1, 2026
+   
+      <time data-testid="test-todo-due-date" datetime="2026-04-16T18:00:00Z"></time>
+       <i class="fa-solid fa-calendar"></i> Due April 16, 2026
     </time>
 
     <time data-testid="test-todo-time-remaining" aria-live="polite"></time>
 
-    <span class="status" data-testid="test-todo-status">
-      <i class="fa-solid fa-clock"></i>
-      Pending
-    </span>
+    
   </div>
+  <i class="fa-solid fa-clock"></i> Status Indicator
+  <span class="status" data-testid="test-todo-status">
+ 
+PENDING
+</span>
 
   <div class="tags" role="list" data-testid="test-todo-tags">
-    <span class="tag" role="listitem" data-testid="test-todo-tag-work">work</span>
-    <span class="tag" role="listitem" data-testid="test-todo-tag-urgent">urgent</span>
-    <span class="tag" role="listitem">design</span>
+    <i class="fa-solid fa-table-cells-large"></i>Categories
+    <span class="tag" role="listitem" data-testid="test-todo-tag-work"> <i class="fa-solid fa-briefcase" aria-hidden="true"></i>Work</span>
+    <span class="taged" role="listitem" data-testid="test-todo-taged-urgent"><i class="fa-solid fa-bolt" aria-hidden="true"></i>Urgent</span>
+    
   </div>
 
   <div class="actions">
@@ -66,7 +68,7 @@
       </button>
     </div>
   </div>
-<i class="fa-light fa-trash-can"></i>
+
 </article>
 
 <script src="script.js"></script>
