@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Todo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="edit-page">
+  <article class="todo-card">
+    <div class="header">
+      <div>
+        <!-- <h2>Edit Todo</h2> -->
+        <p class="subtitle">Update the task details and save to return to the main card.</p>
+      </div>
+    </div>
+
+    <form class="edit-form" data-testid="test-todo-edit-form">
+      <div class="form-row">
+        <label for="edit-title">Title</label>
+        <input id="edit-title" type="text" data-testid="test-todo-edit-title-input" />
+      </div>
+      <div class="form-row">
+        <label for="edit-description">Description</label>
+        <textarea id="edit-description" rows="4" data-testid="test-todo-edit-description-input"></textarea>
+      </div>
+      <div class="form-row form-row-inline">
+        <label for="edit-priority">Priority</label>
+        <select id="edit-priority" data-testid="test-todo-edit-priority-select">
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+      </div>
+      <div class="form-row form-row-inline">
+        <label for="edit-due-date">Due date</label>
+        <input id="edit-due-date" type="datetime-local" data-testid="test-todo-edit-due-date-input" />
+      </div>
+      <div class="form-actions">
+        <button type="button" class="save" data-testid="test-todo-save-button">Save</button>
+        <button type="button" class="cancel" data-testid="test-todo-cancel-button">Cancel</button>
+      </div>
+    </form>
+  </article>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
